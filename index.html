@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Portfolio tmn</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div class="col-8 my-auto tilt-in-tr">
+                        <h1 class="font-weight-bold">Portfolio Team TMN</h1>
+                        <h6>Dieses Portfolio wurde im Rahmen des Moduls 152
+                            erstellt und dient der Exposition der im
+                            besagten
+                            Modul geschossenen Bilder und gedrehten Videos.
+                        </h6>
+                        <p onclick="navigate('/nicolas')">Per den drei unten auffindbaren Links
+                            können sich die Portfolios der drei Mitglieder
+                            des Teams TMN anschauen, namentlich Nicolas
+                            Michel, Michel Rohrbach und Tomaso Leoni</p>
+                        
+                    </div>
+                    <div class="col-10" id="content"></div>
+                </div>
+            </div>
+        </div>
+        <script src="//unpkg.com/navigo@6"></script>
+        <script src="src/router.js"></script>
+        <script src="src/app.js"></script>
+    </body>
+</html>

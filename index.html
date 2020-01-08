@@ -8,15 +8,16 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
+      />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="src/BeerSlider.css">
   </head>
   <body>
     <div id="app">
       <div class="container h-100">
         <div class="row justify-content-center h-100">
-          <div class="col-8 my-auto tilt-in-tr">
-            <h1 class="font-weight-bold mb-4">Portfolio Team TMN</h1>
+          <div class="col-8 my-auto tilt-in-tr" id="leading-text">
+            <h1 class="font-weight-bold my-4">Portfolio Team TMN</h1>
             <h5>
               Dieses Portfolio wurde im Rahmen des Moduls 152 erstellt und dient
               der Exposition der im besagten Modul geschossenen Bilder und
@@ -28,21 +29,16 @@
               Michel Rohrbach und Tomaso Leoni, anschauen.
             </p>
             <div class="row mt-5 w-50">
-              <div class="col">
-                <a class="text-dark" href="./src/subpages/nicolas.html"
-                  ><h4><u>Nicolas</u></h4></a
-                >
+              <div class="col-5 col-lg-4">
+                <h4 onclick="$('#content').load('./src/subpages/nicolas.html')
+                  new BeerSlider(document.getElementById('slider'));"><u>Nicolas</u></h4>
               </div>
-              <div class="col text-center">
-                <a class="text-dark" href="./src/subpages/michel.html"
-                  ><h4><u>Michel</u></h4></a
-                >
+              <div class="col-5 col-lg-4 text-center">
+                <h4 onclick="$('#content').load('./src/subpages/michel.html')"><u>Michel</u></h4>
               </div>
-              <div class="col text-right">
-                <!--<a class="text-dark" href="./src/subpages/tomaso.html"
-                  ><h4><u>Tomaso</u></h4></a
-                > -->
-                <h4 onclick="$('#content').load('./src/subpages/tomaso.html')"><u>Tomaso</u></h4>
+              <div class="col-5 col-lg-4 text-right">
+                <h4 onclick="$('#content').load('./src/subpages/tomaso.html');
+                  new BeerSlider(document.getElementById('slider'));"><u>Tomaso</u></h4>
               </div>
             </div>
           </div>
@@ -52,9 +48,8 @@
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     <script src="src/app.js" type="text/javascript"></script>
+    <script src="src/BeerSlider.js"></script>
   </body>
 </html>

@@ -10,17 +10,158 @@
             crossorigin="anonymous"
             />
         <link rel="stylesheet" href="base-style.css" />
-        <link rel="stylesheet" href="src/BeerSlider.css">
     </head>
     <body>
         <div id="app">
             <div class="container h-100">
-                <div class="row justify-content-center h-100">
+                <div id="modal" class="modal">
 
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
 
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="modal-image">
 
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
                 </div>
-            </div>
-        </div>
-    </body>
-</html>
+                <div class="row justify-content-center w-100 p-5">
+                    <div class="col-12 row p-3 m-0"
+                        id="pirsch-1-foto-1-container">
+                        <div class="col-8 pb-4">
+                            <img src="../images/tomaso/IMG_4253.JPG"
+                                class="img-fluid rounded shadow"
+                                alt="Erster Pirsch, erstes Foto">
+                        </div>
+                        <div class="col-4">
+                            <h4>Erster Pirsch, Foto #1</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>Beim schiessen dieses Bildes
+                                wollte ich unbedingt mit dem Lensflare der Sonne
+                                arbeiten. Dieser, in Kombination mit den hohen
+                                Kronen der Bäume, welche dank dem Sonnenlicht in
+                                einem knalligen Grün daherkommen, sorgt in
+                                meinen Augen für ein gutes Bild. Mit einer
+                                tiefen Brennweite (in diesem Fall 18mm) sorgte
+                                ich auch für ein majestätisches
+                                daherkommen der Bäume.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-1-foto-2">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4289.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Erster Pirsch, Foto #2</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>Das industrielle Design des
+                                BM-Gebäudes der gibb
+                                zieht auf diesem Fall eine interessante
+                                Abgrenzung durch das Bild. Dazu fand ich die 3
+                                herausstechenden Luftschächte ein schönes
+                                Detail. Rein technisch betrachtet ist dieses
+                                Bild etwas überbelichtet, doch dies liess sich
+                                im Nachhinein korrigieren.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-1-foto-3">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4293.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Erster Pirsch, Foto #3</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>Im Fokus, nicht Zentrum, da dies gegen Sterchis Vorschriften verstösst (auweia), steht bei diesem Bild das altmodische Schild eines Frisörladens. Die französische Schrift untermalt das Vintage-Feeling dieses Schildes nur. Die ausgewaschenen Farben fand ich dazu einen interessantne Kontrast. Wie auch das vorherige Bild, ist diese ein wenig überbelichtet, was sich allerdings ebenfalls ausarbeiten liess.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-2-foto-1">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4331.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Zweiter Pirsch, Foto #1</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-2-foto-2">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4336.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Zweiter Pirsch, Foto #2</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-2-foto-3">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4354.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Zweiter Pirsch, Foto #3</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-3-foto-1">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4363.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Dritter Pirsch, Foto #1</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-3-foto-2">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4368.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Dritter Pirsch, Foto #2</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                    <div class="col-12 row p-3 m-0" id="pirsch-3-foto-3">
+                        <div class="col-8 pb-4">
+                            <div class="rounded shadow">
+                                <img src="../images/tomaso/IMG_4389.JPG" alt=""
+                                    class="img-fluid rounded shadow">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h4>Dritter Pirsch, Foto #3</h4>
+                            <div class="w-100 border-bottom border-secondary"></div>
+                            <p>wychst du</p>
+                        </div>
+                    </div>
+                </div>
+                <script
+                    src="https://code.jquery.com/jquery-3.4.1.min.js"
+                    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+                <script src="modal.js" type="text/javascript"></script>
+            </body>
+        </html>

@@ -8,9 +8,9 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-      />
+    />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="src/BeerSlider.css">
+    <link rel="stylesheet" href="src/BeerSlider.css" />
   </head>
   <body>
     <div id="app">
@@ -31,29 +31,50 @@
 
             <!-- Hier Livestream einfügen -->
 
-            <iframe width="600" height="450" src="https://www.earthcam.com/" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
-            
+            <iframe
+              width="600"
+              height="450"
+              src="https://www.earthcam.com/"
+              scrolling="no"
+              allowfullscreen
+              webkitallowfullscreen
+              frameborder="0"
+              style="border: 0 none transparent;"
+            ></iframe>
+
             <div class="row mt-5 w-50">
               <div class="col-5 col-lg-4">
-                <h4 onclick="$('#content').load('./src/subpages/nicolas.html')
-                  new BeerSlider(document.getElementById('slider'));"><u>Nicolas</u></h4>
+                <h4
+                  onclick="$('#content').load('./src/subpages/nicolas.html')
+                  new BeerSlider(document.getElementById('slider'));"
+                >
+                  <u>Nicolas</u>
+                </h4>
               </div>
               <div class="col-5 col-lg-4 text-center">
-                <h4 onclick="$('#content').load('./src/subpages/michel.html')"><u>Michel</u></h4>
+                <h4 onclick="$('#content').load('./src/subpages/michel.html')">
+                  <u>Michel</u>
+                </h4>
               </div>
               <div class="col-5 col-lg-4 text-right">
-                <h4 onclick="$('#content').load('./src/subpages/tomaso.html');
-                  new BeerSlider(document.getElementById('slider'));"><u>Tomaso</u></h4>
+                <h4
+                  onclick="$('#content').load('./src/subpages/tomaso.html');
+                  new BeerSlider(document.getElementById('slider'));"
+                >
+                  <u>Tomaso</u>
+                </h4>
               </div>
             </div>
           </div>
-          <div class="col-10" id="content"></div>
+          <div class="col-8" id="content"></div>
         </div>
       </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="src/app.js" type="text/javascript"></script>
     <script src="src/BeerSlider.js"></script>
   </body>
